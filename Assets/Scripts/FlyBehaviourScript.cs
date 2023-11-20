@@ -17,7 +17,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame) 
+        if (Mouse.current.leftButton.wasPressedThisFrame || Keyboard.current.upArrowKey.wasPressedThisFrame || Keyboard.current.wKey.wasPressedThisFrame) 
         {
             _rigidbody2d.velocity = Vector2.up * _velocity;
         }
